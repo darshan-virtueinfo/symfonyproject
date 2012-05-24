@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure: false
+
+homepage:
+  is_secure: false
+  
+addreportdetail:
+  is_secure: true
+  
+userReportDetail:
+  is_secure: true
+  
+userReport:
+  is_secure: true
+  
+reportList:
+  is_secure: true
+  
+adduserdetail:
+  is_secure: true	  

@@ -1,0 +1,71 @@
+html, body {width:100%; padding:0; margin:0}
+body {font:14px/25px Arial, Helvetica, sans-serif; color:#000000; min-width:960px; background: white; }
+select {margin:0; padding:0px; height: 30px; width: 150px; }
+
+a {text-decoration:none; cursor:pointer }
+a:hover {text-decoration:none;color: red; }
+.clientwelcome { text-align: right; padding-right: 20px; padding-top: 10px; font-weight: bolder; font-size: 18px; }
+
+.headermain { border: 0px solid; width: 100%; min-height: 100px; }
+.footermain { border: 0px solid; width: 100%; min-height: 100px; }
+.menumain { width: 100%;  border: 0px solid; height: 50px;}
+.submenu { border: 0px solid; height: 50px; margin-left: 8%;}
+.menu { float: left; width: 150px; border: 1px solid; height: 42px; padding-top:8px; text-align: center}
+
+.contentmain { border: 0px solid; width: 100%; min-height: 460px; }
+
+.loginfieldset{  width:500px; height: 250px;}
+.loginmain { border: 0px solid; min-height: 460px;}
+.loginsub { border: 0px solid; margin-left: 17%; min-height: 460px;  padding-top: 30px;}
+.loginhedinag { border:1px solid; font-weight: bolder;  font-size: 30px; font-family; font-variant: inherit; margin-left: 140px; margin-bottom: 10px;}
+.loginform{ border:0px solid; padding-top: 5px; padding-bottom: 0px; border: 0px solid; } 
+.loginerror { color: red; margin-left:138px; border: 0px solid; min-height: 25px;}
+.sucessmsg {  color: red; margin-left:0px; border: 0px solid; min-height: 25px; width: 525px;}
+.loginlabel { border:0px solid; float: left; min-width: 25%; text-align: right; margin-right: 10px;  font-weight: bolder; }
+.loginfield { border:0px solid; padding-bottom: 5px; padding-top: 5px; }
+
+.addreportheading { font-size: 18px; padding-left: 160px;}
+.addreportmain { border: 0px solid; min-height: 460px;}
+.addreportsub { border: 0px solid; margin-left: 17%; min-height: 460px;  padding-top: 30px;}
+.addreport { border: 0px solid;  padding-top: 10px; padding-bottom: 10px; height: 35px;}
+.addreportlabel { float: left; border: 0px solid; height: 35px;  width: 150px; text-align: right; padding-right: 10px; font-weight: bold;}
+.addreportfield { float: left; border: 0px solid; height: 35px; width: 250px; }
+.reporterror { float: left; border: 0px solid; color: red; height: 35px;  padding-top: 2px; width: 500px; font-family: monospace; font-size: 15px; }
+.addreportdescription { border: 0px solid;  padding-top: 10px; padding-bottom: 10px; height: 75px;}
+.addreportdescriptionlabel { float: left; border: 0px solid; height: 80px;  width: 150px; text-align: right; padding-right: 10px; font-weight: bold;}
+.addreportdescriptionfield { float: left; border: 0px solid; height: 80px; width: 250px; }
+.reportdescriptionerror {float: left; border: 0px solid; color: red;  height:80px; width: 500px; font-family: cursive; font-size: 15px;}
+
+.defaultreportmain { border: 0px solid; min-height: 460px;}
+.defaultreportsub { border: 0px solid; margin-left: 8%; min-height: 460px;  padding-top: 30px;}
+.defaultreport { border: 0px solid; padding-top: 0px; padding-bottom: 0px; height: 43px;  padding-bottom: 5px; }
+.defaultreportheading{ float: left; border: 1px solid; width: 135px; padding-left: 10px; height: 40px; font-size: 18px; font-weight: bold; padding-top: 5px;  }
+.defaultreportfieldtaskdetail { float: left; border: 1px solid; width: 260px; padding-left: 10px; height: 40px; font-size: 18px; font-weight: bold; padding-top: 5px;}
+.defaultreportvalue { float: left; width: 135px;  padding-left: 10px; border: 1px solid; height: 40px;  padding-top: 5px; }
+.defaultreportvaluetaskdetail { float: left; width: 260px;  padding-left: 10px; border: 1px solid; height: 40px;  padding-top: 5px;}
+
+.defaultreportpagination { border: 1px solid; width: 1155px; height: 40px; text-align: center; padding-left: 145px; }
+.pagination { float: left; border: 0px solid; height: 40px; width: 146px; padding-top: 5px; font-weight: bold; }
+.repotlistheading { float: left; font-weight: bolder; width: 100px; text-align: left; padding-right: 5px; }
+.repotlistvalue { padding-bottom: 5px;  }
+.reportlistcomma{ float: left; font-weight: bolder; padding-right: 10px;}
+
+.findreportmain { border: 0px solid; min-height: 460px;}
+.findreportsub { border: 0px solid; margin-left: 17%; min-height: 460px;  padding-top: 30px;}
+.findreport { border: 0px solid; padding-top: 0px; padding-bottom: 0px; height: 43px;  padding-bottom: 5px;}
+.findreportheading{ float: left; border: 1px solid; width: 135px; padding-left: 10px; height: 40px; font-size: 18px; font-weight: bold; padding-top: 5px;}
+.findreportfieldtaskdetail { float: left; border: 1px solid; width: 407px; padding-left: 10px; height: 40px; font-size: 18px; font-weight: bold; padding-top: 5px;}
+.findreportvalue { float: left; width: 135px;  padding-left: 10px; border: 1px solid; height: 40px;  padding-top: 5px;  }
+.findreportvaluetaskdetail { float: left; width: 407px;  padding-left: 10px; border: 1px solid; height: 40px;  padding-top: 5px;}
+
+.findreportpagination { border: 1px solid; width: 1155px; height: 40px; text-align: center; padding-left: 145px; }
+.pagination { float: left; border: 0px solid; height: 40px; width: 146px; padding-top: 5px; font-weight: bold; }
+.totaltask { font-weight: bolder; font-size: 15px; }
+
+.adduserheading { font-size: 18px; padding-left: 160px;}
+.addusermain { border: 0px solid; min-height: 460px;}
+.addusersub { border: 0px solid; margin-left: 17%; min-height: 460px;  padding-top: 30px;}
+.adduser { border: 0px solid; padding-top: 0px; }
+.adduserlabel { float: left; border: 1px; width: 150px; text-align: right; padding-right: 10px; font-weight: bold;}
+.usererror { border: 0px solid; color: red; padding-left: 160px;}
+.adduserfield { border: 0px solid;}

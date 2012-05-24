@@ -1,0 +1,226 @@
+TABLE2:
+  connection: doctrine
+  tableName: TABLE_2
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    provider:
+      type: string(5)
+      notnull: false
+    provider_country:
+      type: string(2)
+      notnull: false
+    sku:
+      type: string(4)
+      notnull: false
+    developer:
+      type: string(9)
+      notnull: false
+    title:
+      type: string(9)
+      notnull: false
+    version:
+      type: decimal(2, 1)
+      notnull: false
+    product_type_identifier:
+      type: integer(4)
+      notnull: false
+    units:
+      type: integer(4)
+      notnull: false
+    developer_proceeds:
+      type: integer(4)
+      notnull: false
+    begin_date:
+      type: string(10)
+      notnull: false
+    end_date:
+      type: string(10)
+      notnull: false
+    customer_currency:
+      type: string(3)
+      notnull: false
+    country_code:
+      type: string(2)
+      notnull: false
+    currency_of_proceeds:
+      type: string(3)
+      notnull: false
+    apple_identifier:
+      type: integer(4)
+      notnull: false
+    customer_price:
+      type: integer(4)
+      notnull: false
+    promo_code:
+      type: string(1)
+      notnull: false
+    parent_identifier:
+      type: string(1)
+      notnull: false
+    subscription:
+      type: string(1)
+      notnull: false
+    period:
+      type: string(1)
+      notnull: false
+Reports:
+  actAs:
+    Timestampable:
+  connection: doctrine
+  tableName: reports
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      primary: false
+      autoincrement: false  
+    project_id:
+      type: integer(4)
+    task_id:
+      type: integer(4)
+      default: 1
+      notnull: false
+    start_time:
+        type: time
+    end_time:
+        type: time	  
+    task_hour:
+      type: float
+    detail:
+      type: string()
+    date_at:
+      type: date
+  relations:
+    User:
+      local: user_id
+      foreign: id
+    ProjectDetail:
+      local: project_id
+      foreign: id
+    TaskType:
+      local: task_id
+      foreign: id  
+User:
+  actAs:
+    Timestampable:	
+  connection: doctrine
+  tableName: user
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    firstname:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lastname:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    password:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Admin:
+  actAs:
+    Timestampable:	
+  connection: doctrine
+  tableName: admin
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    firstname:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lastname:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    password:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false      
+ProjectDetail:
+  actAs:
+    Timestampable:	
+  connection: doctrine
+  tableName: projectdetail
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    projectname:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+TaskType:
+  actAs:
+    Timestampable:	
+  connection: doctrine
+  tableName: tasktype
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    tasktype:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false       

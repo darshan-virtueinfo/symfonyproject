@@ -1,0 +1,53 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: reports, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+addreportdetail:
+  url:   /reports/addreportdetail/*
+  param: { module: reports, action: addreportdetail }
+ 
+editreportdetail:
+  url:   /reports/editreportdetail/*
+  param: { module: reports, action: addreportdetail }
+    
+
+userReportDetail:
+  url:   /reports/userReportDetail/*
+  param: { module: reports, action: userReportDetail }
+
+userReport:
+  url:   /reports/userReport/*
+  param: { module: reports, action: userReport }
+      
+reportList:
+  url:   /reports/reportList/*
+  param: { module: reports, action: reportList }
+  
+login:
+  url:   /login/login/*
+  param: { module: login, action: login }
+
+logout:
+  url:   /login/logout/*
+  param: { module: login, action: logout }
+  
+adduserdetail:
+  url:   /login/addUserDetail/*
+  param: { module: login, action: addUserDetail }
+
+edituserdetail:
+  url:   /login/editUserDetail/*
+  param: { module: login, action: addUserDetail }
+    
+default:
+  url:   /:module/:action/*
